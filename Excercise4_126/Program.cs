@@ -34,11 +34,11 @@ namespace Excercise4_126
                 Fahrizal[++top] = element;
             }
         }
-    }
-    internal class Program
-    {
+
         static void Main(string[] args)
         {
         }
     }
 }
+    
+
