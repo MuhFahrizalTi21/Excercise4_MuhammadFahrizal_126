@@ -47,6 +47,10 @@ namespace Excercise4_126
                 return Fahrizal[top--];
             }
         }
+        public void display()
+        {
+            
+        }
        
         static void Main(string[] args)
         {
