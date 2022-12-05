@@ -11,7 +11,10 @@ namespace Excercise4_126
         char [] Fahrizal = new char [42];
 
         int top;
-        
+        public Stack()
+        {
+            top = -1;
+        }
     }
     internal class Program
     {
