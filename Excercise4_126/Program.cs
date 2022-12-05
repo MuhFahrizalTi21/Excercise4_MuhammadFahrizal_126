@@ -8,10 +8,10 @@ namespace Excercise4_126
 {
     class Stack
     {
-        int [] Fahrizal = new int [42];
-
-        int top;
-        public Stack()
+        Char [] Fahrizal = new Char [42];
+        private int top;
+        private int max;
+        public Stack(int size)
         {
             top = -1;
         }
@@ -39,17 +39,28 @@ namespace Excercise4_126
             if (top == -1)
             {
                 Console.WriteLine("Stack Underflow");
-                return -1;
+                return;
             }
             else
             {
                 Console.WriteLine("Poped Elemen is: " + Fahrizal[top]);
-                return Fahrizal[top--];
+                return;
             }
         }
         public void display()
         {
-            
+            if (top == -1)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            else
+            {
+                for (int i = 0; i <= top; i++)
+                {
+                    Console.WriteLine("Array [" + (i + 1) + "]: " + Fahrizal[i]);
+                }
+            }
         }
        
         static void Main(string[] args)
