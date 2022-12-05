@@ -8,7 +8,7 @@ namespace Excercise4_126
 {
     class Stack
     {
-        char [] Fahrizal = new char [42];
+        int [] Fahrizal = new int [42];
 
         int top;
         public Stack()
@@ -21,6 +21,18 @@ namespace Excercise4_126
                 return true;
             else 
                 return false;
+        }
+        public void Push(int element)
+        {
+            if (top == -1 )
+            {
+                Console.WriteLine("Stack Overflow");
+                return;
+            }
+            else
+            {
+                Fahrizal[++top] = element;
+            }
         }
     }
     internal class Program
