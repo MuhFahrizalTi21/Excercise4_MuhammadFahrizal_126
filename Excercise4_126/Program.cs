@@ -10,6 +10,8 @@ namespace Excercise4_126
     {
         char [] Fahrizal = new char [42];
 
+        int top;
+        
     }
     internal class Program
     {
