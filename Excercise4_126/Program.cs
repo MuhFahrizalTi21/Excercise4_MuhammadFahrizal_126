@@ -75,6 +75,16 @@ namespace Excercise4_126
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. Exit ");
                 Console.WriteLine("\nEnter your choice: ");
+                string Input = Console.Readline();
+                char ch = Convert.ToChar(Input == ""?"0": Input);
+                switch(ch)
+                {
+                    case '1':
+                        Console.WriteLine("\nEnter a number : ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        S.push(num);
+                        break;
+                }
             }
 
         }
