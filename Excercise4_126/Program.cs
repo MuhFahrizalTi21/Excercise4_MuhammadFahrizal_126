@@ -11,7 +11,7 @@ namespace Excercise4_126
         Char [] Fahrizal = new Char [42];
         private int top;
         private int max;
-        public Stack(int size)
+        public Stack()
         {
             top = -1;
         }
@@ -24,15 +24,8 @@ namespace Excercise4_126
         }
         public void Push(char element)
         {
-            if (top == -1 )
-            {
-                Console.WriteLine("Stack Overflow");
-                return;
-            }
-            else
-            {
-                Fahrizal[++top] = element;
-            }
+            Console.WriteLine("Masukan Element Array ")
+           
         }
         public void Pop()
         {
@@ -75,14 +68,14 @@ namespace Excercise4_126
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. Exit ");
                 Console.WriteLine("\nEnter your choice: ");
-                string Input = Console.Readline();
+                string Input =Console.ReadLine();
                 char ch = Convert.ToChar(Input == ""?"0": Input);
                 switch(ch)
                 {
                     case '1':
                         Console.WriteLine("\nEnter a number : ");
-                        int num = Convert.ToInt32(Console.ReadLine());
-                        S.Push(num);
+                        char Fahhrizal = Convert.ToChar(Console.ReadLine());
+                        S.Push(Fahhrizal);
                         break;
                     case '2':
                         if (S.empty())
