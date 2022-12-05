@@ -22,7 +22,7 @@ namespace Excercise4_126
             else 
                 return false;
         }
-        public void Push(int element)
+        public void Push(char element)
         {
             if (top == -1 )
             {
@@ -65,6 +65,18 @@ namespace Excercise4_126
        
         static void Main(string[] args)
         {
+            Stack S = new Stack ();
+            while(true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n*****Stack Menu******\n");
+                Console.WriteLine("1. Push ");
+                Console.WriteLine("2. Pop ");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit ");
+                Console.WriteLine("\nEnter your choice: ");
+            }
+
         }
     }
 }
