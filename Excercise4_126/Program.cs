@@ -47,7 +47,7 @@ namespace Excercise4_126
                 return;
             }
         }
-        public void display()
+        public void Display()
         {
             if (top == -1)
             {
@@ -82,7 +82,25 @@ namespace Excercise4_126
                     case '1':
                         Console.WriteLine("\nEnter a number : ");
                         int num = Convert.ToInt32(Console.ReadLine());
-                        S.push(num);
+                        S.Push(num);
+                        break;
+                    case '2':
+                        if (S.empty())
+                        {
+                            Console.WriteLine("\nStack empty");
+                            break;
+                        }
+                        S.Pop();
+                        break;
+
+                    case '3':
+                        S.Display();
+                        break;
+
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
                         break;
                 }
             }
