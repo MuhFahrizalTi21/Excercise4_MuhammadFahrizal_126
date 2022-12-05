@@ -34,7 +34,20 @@ namespace Excercise4_126
                 Fahrizal[++top] = element;
             }
         }
-
+        public void Pop()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack Underflow");
+                return -1;
+            }
+            else
+            {
+                Console.WriteLine("Poped Elemen is: " + Fahrizal[top]);
+                return Fahrizal[top--];
+            }
+        }
+       
         static void Main(string[] args)
         {
         }
